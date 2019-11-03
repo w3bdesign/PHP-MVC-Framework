@@ -31,4 +31,4 @@ jobs:
           command: php composer.phar install
       - run:
           name: Run Unit tests
-          command: vendor/bin/phpunit --bootstrap /vendor/autoload.php /tests
+          command: vendor/bin/phpunit --bootstrap ./vendor/autoload.php ./tests
