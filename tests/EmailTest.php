@@ -6,6 +6,6 @@ class FileExistsTest extends TestCase
 {
     public function testFailure()
     {
-        $this->assertFileExists('index.php');
+        $this->assertFileExists('indexdoesnotexist.php');
     }
 }
