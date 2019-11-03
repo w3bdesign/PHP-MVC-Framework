@@ -1,3 +1,3 @@
 <?php
-echo "Dette er en test!";
+print_r ("Dette er en test!");
 ?>
