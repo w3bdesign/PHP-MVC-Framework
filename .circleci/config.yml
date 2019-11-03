@@ -14,7 +14,7 @@ jobs:
           name: Install PHP extensions
           command: docker-php-ext-install pdo
       - checkout
-       - run:
+      - run:
           name: Install Composer
           command: |
             php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -26,6 +26,9 @@ jobs:
           command: |
             php -v
             php composer.phar --version
+      - run:
+          name: Install project dependencies
+          command: php composer.phar install
       - run:
           name: Run Unit tests
           command: vendor/bin/phpunit
