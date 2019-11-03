@@ -1,3 +1,4 @@
 <?php
-print_r ("Dette er en test!");
-?>
+
+// TODO: Remove this file
+//print_r ("Dette er en test!");
