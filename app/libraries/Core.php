@@ -37,11 +37,17 @@ class Core
             $url = explode("/", $url);
             return $url;
         }
-        // Check method
+        // Check if method exists in controller
         if (isset($url[1])) {
             if (method_exists($this->currentController, $url[1])) {
                 $this->currentMethod = $url[1];
+                unset($url[1]);
             }
         }
+
+        // Get parameters
+        $this->params = $url ? array_values($url) : [];
+        // Call callback with an array of the parameters
+        call_user_func_array([$this->currentController, $this->currentMethod], $this->params);
     }
 }
