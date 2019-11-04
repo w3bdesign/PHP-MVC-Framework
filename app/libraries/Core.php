@@ -20,10 +20,8 @@ class Core
     public function getUrl()
     {
         // ? Improve with Regex
-
-        $input = new Input();
-        if (($input->server('QUERY_STRING'))) {
-            $url = filter_input(INPUT_SERVER, 'QUERY_STRING', FILTER_SANITIZE_URL);
+        $url = filter_input(INPUT_SERVER, 'QUERY_STRING', FILTER_SANITIZE_URL);
+        if (isset($url)) {
             $url = rtrim($url, "/");
             $url = explode("/", $url);
             return $url;
