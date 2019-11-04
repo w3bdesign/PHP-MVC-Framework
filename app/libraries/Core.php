@@ -16,11 +16,16 @@ class Core
     {
         // print_r($this->getUrl());
         $url = $this->getUrl();
+
         // Check if controller exists in controllers folder
         if (file_exists("../controllers/" . ucwords($url[0]) . ".php")) {
             $this->currentController = ucwords($url[0]);
             unset($url[0]);
         }
+        // Require controller
+        require_once "../controllers/" . $this->currentController . ".php";
+        // Init controller
+        $this->currentController = new $this->currentController;
     }
 
     public function getUrl()
