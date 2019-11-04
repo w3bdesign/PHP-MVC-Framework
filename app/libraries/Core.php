@@ -14,7 +14,13 @@ class Core
 
     public function __construct()
     {
-        return $this->getUrl();
+        // print_r($this->getUrl());
+        $url = $this->getUrl();
+        // Check if controller exists in controllers folder
+        if (file_exists("../controllers/" . ucwords($url[0]) . ".php")) {
+            $this->currentController = ucwords($url[0]);
+            unset($url[0]);
+        }
     }
 
     public function getUrl()
