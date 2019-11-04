@@ -37,5 +37,11 @@ class Core
             $url = explode("/", $url);
             return $url;
         }
+        // Check method
+        if (isset($url[1])) {
+            if (method_exists($this->currentController, $url[1])) {
+                $this->currentMethod = $url[1];
+            }
+        }
     }
 }
