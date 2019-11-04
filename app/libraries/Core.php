@@ -23,7 +23,7 @@ class Core
         //if (isset($_GET["url"])) {
         //if (isset($_SERVER['QUERY_STRING'])) {
         $url = filter_input(INPUT_SERVER, 'QUERY_STRING', FILTER_SANITIZE_URL);
-        $url = rtrim($_GET["url"], "/");
+        $url = rtrim($url, "/");
         $url = explode("/", $url);
         return $url;
     }
