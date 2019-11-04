@@ -14,14 +14,15 @@ class Core
 
     public function __construct()
     {
-        print_r($this->getUrl());
+        return $this->getUrl();
     }
 
     public function getUrl()
     {
-        // TODO Improve with Regex
-        if (isset($_GET["url"])) {
-            //if (isset($_SERVER['QUERY_STRING'])) {
+        // ? Improve with Regex
+
+        $input = new Input();
+        if (($input->server('QUERY_STRING'))) {
             $url = filter_input(INPUT_SERVER, 'QUERY_STRING', FILTER_SANITIZE_URL);
             $url = rtrim($url, "/");
             $url = explode("/", $url);
