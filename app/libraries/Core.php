@@ -21,11 +21,10 @@ class Core
     {
         // TODO Improve with Regex
         //if (isset($_GET["url"])) {
-        if (isset($_SERVER['QUERY_STRING'])) {
-            $url = rtrim($_GET["url"], "/");
-            $url = filter_var($url, FILTER_SANITIZE_URL);
-            $url = explode("/", $url);
-            return $url;
-        }
+        //if (isset($_SERVER['QUERY_STRING'])) {
+        $url = filter_input(INPUT_SERVER, 'QUERY_STRING', FILTER_SANITIZE_URL);
+        $url = rtrim($_GET["url"], "/");
+        $url = explode("/", $url);
+        return $url;
     }
 }
