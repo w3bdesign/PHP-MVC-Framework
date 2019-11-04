@@ -10,8 +10,8 @@ Creating a MVC PHP framework and making an application with Bootstrap 4
 docker run -d -p 80:80 w3bdesign/w3bdesign:latest
 
 ## TODO
-- Implement better unit tests
-- Finish framework
-- Various code improvements
-- Code application with framework
-- Implement Bootstrap
+  - Implement better unit tests
+  - Finish framework
+  - Various code improvements
+  - Code application with framework
+  - Implement Bootstrap
