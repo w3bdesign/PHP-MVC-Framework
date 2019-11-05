@@ -1,1 +1,1 @@
-<h1><?php print_r($data["Title"]) ?></h1>
+<h1><?php print_r($data["title"]) ?></h1>
