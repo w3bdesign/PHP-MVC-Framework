@@ -32,8 +32,8 @@ jobs:
       - run:
           name: Run Unit tests
           command: vendor/bin/phpunit --bootstrap ./vendor/autoload.php ./tests
-      - run:
-          name: Code coverage
-          command: phpdbg -qrr vendor/bin/phpunit --whitelist ./app/controllers --bootstrap ./vendor/autoload.php ./tests --coverage-html build/coverage-report
-      - store_artifacts:
-          path: build/coverage-report
+    # - run:
+    #    name: Code coverage
+    #    command: phpdbg -qrr vendor/bin/phpunit --whitelist ./app/controllers --bootstrap ./vendor/autoload.php ./tests --coverage-html build/coverage-report
+    #  - store_artifacts:
+    #    path: build/coverage-report
