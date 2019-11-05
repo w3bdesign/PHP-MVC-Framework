@@ -49,14 +49,15 @@ class Core
 
     public function getUrl()
     {
-        $url = isset($_GET['url']) ? $_GET['url']  : "";
-        //$url = "";
-        //$url = filter_var($_GET['url'], FILTER_SANITIZE_URL);
+        $url = filter_input(INPUT_SERVER, 'QUERY_STRING', FILTER_SANITIZE_URL);
+
+
         // TODO Improve with Regex? ...
         if (isset($url)) {
             $url = rtrim($url, '/');
             $url = filter_var($url, FILTER_SANITIZE_URL);
             $url = explode('/', $url);
+            //print_r($url);
             return $url;
         }
     }
