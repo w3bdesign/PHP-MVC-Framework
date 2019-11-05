@@ -1,0 +1,7 @@
+<phpunit>
+    <filter>
+        <whitelist>
+            <directory>controllers</directory>
+        </whitelist>        
+    </filter>
+</phpunit>
