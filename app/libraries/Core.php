@@ -49,7 +49,9 @@ class Core
 
     public function getUrl()
     {
-        $url = filter_var($url, FILTER_SANITIZE_URL);
+        $url = isset($_GET['url']) ? $_GET['url']  : "";
+        //$url = "";
+        //$url = filter_var($_GET['url'], FILTER_SANITIZE_URL);
         // TODO Improve with Regex? ...
         if (isset($url)) {
             $url = rtrim($url, '/');
