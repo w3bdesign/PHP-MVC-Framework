@@ -20,10 +20,9 @@ class Controller
     {
         // Check for view file
         if (file_exists("../app/views/" . $view . ".php")) {
-
             require_once "../app/views/" . $view . ".php";
-        } else {
-            throw new Error("View " .  $view . " does not exist");
+            return;
         }
+        throw new Error("View " .  $view . " does not exist");
     }
 }
