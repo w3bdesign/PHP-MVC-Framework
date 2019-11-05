@@ -1,7 +1,7 @@
 <phpunit>
     <filter>
         <whitelist>
-            <directory>controllers</directory>
+            <directory>/app/controllers</directory>
         </whitelist>        
     </filter>
 </phpunit>
