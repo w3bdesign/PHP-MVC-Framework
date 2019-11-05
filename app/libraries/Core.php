@@ -1,4 +1,6 @@
 <?php
+
+declare(strict_types=1);
 /*
    * App Core Class
    * Creates URL & loads core controller

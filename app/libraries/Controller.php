@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 /**
  * Base controller
  * Loads the models and the views
