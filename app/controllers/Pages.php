@@ -6,7 +6,12 @@ class Pages extends Controller
 
     public function index()
     {
-        //die("Index from Pages");
-        $this->view("hello");
+        $data = ["title" => "Welcome"];
+        $this->view("pages/index", $data);
+    }
+
+    public function about()
+    {
+        $this->view("pages/about");
     }
 }
