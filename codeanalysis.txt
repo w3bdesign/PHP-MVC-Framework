@@ -1,9 +1,6 @@
-# .\vendor\bin\phpinsights.bat analyse --format=console -n > test.txt
 
 
-
-
-[2019-11-05 18:33:36] `C:\xampp\htdocs`
+[2019-11-06 01:38:58] `C:\xampp\htdocs`
 
                                                                               
         93.4%                71.4%                82.6%                87.0%  
@@ -13,44 +10,42 @@
 
 Score scale: ◼ 1-49 ◼ 50-79 ◼ 80-100
 
-[CODE] 93.4 pts within 91 lines
+[CODE] 93.4 pts within 76 lines
 
-Comments .......................................................... 67.0 %
-Classes ........................................................... 27.5 %
+Comments .......................................................... 51.3 %
+Classes ........................................................... 32.9 %
 Functions .......................................................... 0.0 %
-Globally ........................................................... 5.5 %
+Globally .......................................................... 15.8 %
 
 [COMPLEXITY] 71.4 pts with average of 1.86 cyclomatic complexity
 
-[ARCHITECTURE] 82.6 pts within 9 files
+[ARCHITECTURE] 82.6 pts within 8 files
 
-Classes ........................................................... 33.3 %
+Classes ........................................................... 37.5 %
 Interfaces ......................................................... 0.0 %
-Globally .......................................................... 66.7 %
+Globally .......................................................... 62.5 %
 Traits ............................................................. 0.0 %
 
 [MISC] 87 pts on coding style and 0 security issues encountered
 
 • [Code] 1 unused variables:
-  C:\xampp\htdocs\public\index.php:5: Unused variable $init.
+  C:\xampp\htdocs\public\index.php:7: Unused variable $init.
 
 • [Code] Declare strict types:
-  C:\xampp\htdocs\app\libraries\Core.php:1: Missing declare(strict_types=1).
-  C:\xampp\htdocs\app\views\pages\index.php:1: Missing declare(strict_types=1).
-  C:\xampp\htdocs\public\index.php:1: Missing declare(strict_types=1).
-  +4 issues omitted
+  C:\xampp\htdocs\app\bootstrap.php:6: Expected 2 newlines between PHP open tag and declare statement, found 1.
 
 • [Code] Todo:
-  C:\xampp\htdocs\app\libraries\Core.php:55: Comment refers to a TODO task "Improve with Regex?"
+  C:\xampp\htdocs\app\bootstrap.php:4: Comment refers to a TODO task "Replace with autoloader?"
+  C:\xampp\htdocs\app\libraries\Core.php:67: Comment refers to a TODO task "Improve with Regex?"
 
 • [Code] Type hint declaration:
-  C:\xampp\htdocs\app\libraries\Core.php:10: Property \Core::$currentMethod does not have @var annotation.
-  C:\xampp\htdocs\app\libraries\Core.php:11: Property \Core::$params does not have @var annotation.
-  C:\xampp\htdocs\app\libraries\Core.php:50: Method \Core::getUrl() does not have return type hint nor @return annotation for its return value.
-  +8 issues omitted
+  C:\xampp\htdocs\app\libraries\Controller.php:24: Method \Controller::view() does not have void return type hint.
+  C:\xampp\htdocs\app\libraries\Core.php:21: @var annotation of property \Core::$params does not specify type hint for its items.
+  C:\xampp\htdocs\app\libraries\Core.php:62: Method \Core::getUrl() does not have return type hint nor @return annotation for its return value.
+  +6 issues omitted
 
 • [Code] Unused parameter:
-  C:\xampp\htdocs\app\libraries\Controller.php:23: Unused parameter $data.
+  C:\xampp\htdocs\app\libraries\Controller.php:24: Unused parameter $data.
 
 • [Complexity] Having `classes` with more than 5 cyclomatic complexity is prohibited - Consider refactoring:
   C:\xampp\htdocs\app\libraries\Core.php: 6 cyclomatic complexity
@@ -61,9 +56,9 @@ Traits ............................................................. 0.0 %
   C:\xampp\htdocs\app\libraries\Core.php
 
 • [Architecture] Class declaration:
-  C:\xampp\htdocs\app\controllers\Pages.php:2: Each class must be in a namespace of at least one level (a top-level vendor name)
-  C:\xampp\htdocs\app\libraries\Controller.php:9: Each class must be in a namespace of at least one level (a top-level vendor name)
-  C:\xampp\htdocs\app\libraries\Core.php:7: Each class must be in a namespace of at least one level (a top-level vendor name)
+  C:\xampp\htdocs\app\controllers\Pages.php:5: Each class must be in a namespace of at least one level (a top-level vendor name)
+  C:\xampp\htdocs\app\libraries\Controller.php:10: Each class must be in a namespace of at least one level (a top-level vendor name)
+  C:\xampp\htdocs\app\libraries\Core.php:10: Each class must be in a namespace of at least one level (a top-level vendor name)
 
 • [Architecture] Composer.json is not valid:
   composer.json: The property name is required
@@ -71,26 +66,26 @@ Traits ............................................................. 0.0 %
   composer.json: No license specified, it is recommended to do so. For closed-source software you may use "proprietary" as license.
 
 • [Architecture] Function length:
-  C:\xampp\htdocs\app\libraries\Core.php:13: Your function is too long. Currently using 34 lines. Can be up to 20 lines.
+  C:\xampp\htdocs\app\libraries\Core.php:25: Your function is too long. Currently using 34 lines. Can be up to 20 lines.
 
 • [Style] Line endings:
-  C:\xampp\htdocs\app\controllers\Pages.php:1: End of line character is invalid; expected "\n" but found "\r\n"
-  C:\xampp\htdocs\app\helpers\Input.php:1: End of line character is invalid; expected "\n" but found "\r\n"
+  C:\xampp\htdocs\app\libraries\Database.php:1: End of line character is invalid; expected "\n" but found "\r\n"
+  C:\xampp\htdocs\app\views\pages\index.php:1: End of line character is invalid; expected "\n" but found "\r\n"
   C:\xampp\htdocs\public\index.php:1: End of line character is invalid; expected "\n" but found "\r\n"
-  +1 issues omitted
+  +2 issues omitted
 
 • [Style] Scope closing brace:
-  C:\xampp\htdocs\app\controllers\Pages.php:5: Closing brace must be on a line by itself
+  C:\xampp\htdocs\app\controllers\Pages.php:8: Closing brace must be on a line by itself
 
 • [Style] Line length:
-  C:\xampp\htdocs\app\libraries\Core.php:47: Line exceeds 80 characters; contains 94 characters
+  C:\xampp\htdocs\app\libraries\Core.php:59: Line exceeds 80 characters; contains 94 characters
 
 • [Style] Character before p h p opening tag:
-  C:\xampp\htdocs\app\views\pages\index.php:1: The opening PHP tag must be the first content in the file
+  C:\xampp\htdocs\app\views\pages\index.php:6: The opening PHP tag must be the first content in the file
 
 • [Style] Superfluous whitespace:
-  C:\xampp\htdocs\app\libraries\Core.php:53: Functions must not contain multiple empty lines in a row; found 2 empty lines
+  C:\xampp\htdocs\app\libraries\Core.php:65: Functions must not contain multiple empty lines in a row; found 2 empty lines
 
 • [Style] Class instantiation:
-  C:\xampp\htdocs\app\libraries\Core.php:31: Parentheses must be used when instantiating a new class
-  C:\xampp\htdocs\public\index.php:5: Parentheses must be used when instantiating a new class
+  C:\xampp\htdocs\app\libraries\Core.php:43: Parentheses must be used when instantiating a new class
+  C:\xampp\htdocs\public\index.php:7: Parentheses must be used when instantiating a new class

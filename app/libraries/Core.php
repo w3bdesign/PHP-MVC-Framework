@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 /*
    * App Core Class
    * Creates URL & loads core controller
@@ -8,8 +9,17 @@ declare(strict_types=1);
    */
 class Core
 {
+    /**
+     * @var string
+     */
     protected $currentController = 'Pages';
+    /**
+     * @var string
+     */
     protected $currentMethod = 'index';
+    /**
+     * @var array
+     */
     protected $params = [];
 
     public function __construct()
