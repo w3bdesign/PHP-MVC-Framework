@@ -2,5 +2,8 @@
 
 declare(strict_types=1);
 
+require APPROOT . "/views/inc/header.php";
 
-print_r($data["title"]);
+echo (htmlspecialchars($data["title"]));
+
+require APPROOT . "/views/inc/footer.php";
