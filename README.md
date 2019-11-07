@@ -3,7 +3,7 @@
 [![](https://images.microbadger.com/badges/version/w3bdesign/w3bdesign.svg)](https://microbadger.com/images/w3bdesign/w3bdesign "Currently running latest version")
 ![GitHub last commit](https://img.shields.io/github/last-commit/w3bdesign/PHP-MVC-Bootstrap)
 
-# PHP-MVC-Bootstrap
+# PHP-MVC Framework
 PHP MVC framework with PDO Database class. 
 
 Tools used for building: PHPUnit, Codacy, PHPmd, PHPcs, PHP Insights.
