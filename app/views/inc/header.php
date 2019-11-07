@@ -11,7 +11,7 @@ declare(strict_types=1);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/public/css/style.css">
-    <title><?php return SITENAME; ?></title>
+    <title>Site Name</title>
 </head>
 
 <body>

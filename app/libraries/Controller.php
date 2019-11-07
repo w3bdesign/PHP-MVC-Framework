@@ -14,7 +14,7 @@ class Controller
     public function model($model)
     {
         // Require model file
-        include_once "../app/models" . $model . ".php";
+        include_once "../app/models/" . $model . ".php";
         // Init model
         return new $model();
     }
