@@ -7,6 +7,7 @@
 PHP MVC framework with PDO Database class. 
 
 Tools used for building: PHPUnit, Codacy, PHPmd, PHPcs, PHP Insights.
+
 Includes basic PHPunit, Docker and Circleci setup. Take a look at the config files to understand the process better.
  
 ## Docker
