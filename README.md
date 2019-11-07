@@ -4,11 +4,16 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/w3bdesign/PHP-MVC-Bootstrap)
 
 # PHP-MVC-Bootstrap
-Creating a MVC PHP framework and making an application with Bootstrap 4. 
+PHP MVC framework with PDO Database class. 
 
-Tools included in CircleCI build process: PHPcs, PHPmd and PHP Insights.
+Tools used for building: PHPUnit, Codacy, PHPmd, PHPcs, PHP Insights.
+Includes basic PHPunit, Docker and Circleci setup. Take a look at the config files to understand the process better.
  
 ## Docker
 Run docker-compose up or the following command below:
 
 docker run -d -p 80:80 w3bdesign/w3bdesign:latest
+
+## TODO
+- Implement better documentation
+- Improve code quality of framework
