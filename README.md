@@ -16,3 +16,4 @@ docker run -d -p 80:80 w3bdesign/w3bdesign:latest
 
 ## TODO
 - Implement better documentation
+- Improve code quality of framework
