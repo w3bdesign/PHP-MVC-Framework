@@ -34,7 +34,7 @@ jobs:
           command: vendor/bin/phpunit --bootstrap ./vendor/autoload.php ./tests
       - run:
           name: Coding standards
-          command: vendor/bin/phpinsights --no-interaction --min-quality=80 --min-complexity=75 --min-architecture=85 --min-style=90
+          command: vendor/bin/phpinsights --no-interaction --min-quality=80 --min-complexity=70 --min-architecture=85 --min-style=90
     # - run:
     #    name: Code coverage
     #    command: phpdbg -qrr vendor/bin/phpunit --whitelist ./app/controllers --bootstrap ./vendor/autoload.php ./tests --coverage-html build/coverage-report
