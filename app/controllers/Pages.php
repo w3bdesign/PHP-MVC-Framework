@@ -6,7 +6,7 @@ final class Pages extends Controller
 {
     public function __construct()
     {
-        //
+        // Add something here?
     }
 
     public function index()

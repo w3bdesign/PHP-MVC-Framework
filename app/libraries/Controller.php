@@ -7,7 +7,7 @@ declare(strict_types=1);
  * Loads the models and the views
  */
 
-class Controller
+final class Controller
 {
 
     // Load model

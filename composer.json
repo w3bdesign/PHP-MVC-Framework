@@ -2,7 +2,7 @@
     "name": "w3bdesign/php-mvc-bootstrap",
     "description": "PHP MVC Framework",
     "type": "project",
-    "license": "GPL",
+    "license": "GPL-3.0-only",
     "minimum-stability": "stable",
     "autoload": {
         "classmap": [

@@ -7,7 +7,7 @@ declare(strict_types=1);
    * Creates URL & loads core controller
    * URL FORMAT - /controller/method/params
    */
-class Core
+final class Core
 {
     /**
      * @var string
