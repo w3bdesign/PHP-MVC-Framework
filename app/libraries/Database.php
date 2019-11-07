@@ -27,10 +27,10 @@ final class Database
 
         // Set DSN
         $dbDsn = "mysql:host=" . $this->host . ";dbname=" . $this->dbname;
-        $dbOptions = array(
+        $dbOptions = [
             PDO::ATTR_PERSISTENT => true,
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-        );
+        ];
 
         // Create PDO instance
         try {
