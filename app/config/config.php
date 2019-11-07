@@ -14,7 +14,5 @@ define("DB_NAME", "__DB__NAME");
 define("APPROOT", dirname(dirname(__FILE__)));
 // URL root
 define("URLROOT", "__URL__");
-
-// Site name - commented out for now. 
-
+// Site name - commented out for now.
 //define("SITENAME", "Site Name");

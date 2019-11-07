@@ -3,6 +3,5 @@
 declare(strict_types=1);
 
 require_once "../app/bootstrap.php";
-// Initiate Core library. 
-// Assign to a variable?
+// Initiate Core library.  Assign to a variable?
 new Core();
