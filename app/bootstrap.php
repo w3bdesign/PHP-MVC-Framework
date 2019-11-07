@@ -1,6 +1,6 @@
 <?php
 // Load libraries
-// TODO Replace with autoloader?
+
 
 declare(strict_types=1);
 

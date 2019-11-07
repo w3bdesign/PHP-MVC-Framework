@@ -1,4 +1,9 @@
 {
+    "name": "w3bdesign/php-mvc-bootstrap",
+    "description": "PHP MVC Framework",
+    "type": "project",
+    "license": "GPL",
+    "minimum-stability": "stable",
     "autoload": {
         "classmap": [
             "public/"

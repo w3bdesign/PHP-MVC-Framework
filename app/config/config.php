@@ -12,5 +12,5 @@ define("DB_NAME", "__DB__NAME");
 define("APPROOT", dirname(dirname(__FILE__)));
 // URL root
 define("URLROOT", "__URL__");
-// Site name
-define("SITENAME", "Site Name");
+// Site name - commented out for now. [Architecture] Define `globals` is prohibited:  app/config/config.php: "SITENAME"
+//define("SITENAME", "Site Name");

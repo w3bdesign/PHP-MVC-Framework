@@ -18,7 +18,6 @@ final class Database
 
     private $dbHandler;
 
-    // TODO: 
     private $dbStatement;
     //private $dbError;
 

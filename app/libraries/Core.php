@@ -63,12 +63,12 @@ class Core
     {
         $url = filter_input(INPUT_SERVER, 'QUERY_STRING', FILTER_SANITIZE_URL);
 
-        // TODO Improve with Regex? ...
+        // Improve with Regex? ...
+
         if (isset($url)) {
             $url = rtrim($url, '/');
             $url = filter_var($url, FILTER_SANITIZE_URL);
             $url = explode('/', $url);
-
             return $url;
         }
     }
