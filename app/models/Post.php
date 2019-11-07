@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 class Post
 {
-    private $db;
+    private $database;
 
     public function __construct()
     {
-        $this->db = new Database();
+        $this->database = new Database();
     }
 }

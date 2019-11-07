@@ -17,8 +17,10 @@ final class Database
     private $dbname = DB_NAME;
 
     private $dbHandler;
-    private $dbStatement;
-    private $dbError;
+
+    // TODO: 
+    //private $dbStatement;
+    //private $dbError;
 
     public function __construct()
     {
