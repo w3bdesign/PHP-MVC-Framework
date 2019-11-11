@@ -16,7 +16,7 @@ Run docker-compose up or the following command below:
 docker run -d -p 80:80 w3bdesign/w3bdesign:latest
 
 ## TODO
-Take a look at the current issues
+Take a look at the current issues. See also https://github.com/w3bdesign/Bootstrap-App-PHP-MVC/issues
 
 Implement better documentation
 
