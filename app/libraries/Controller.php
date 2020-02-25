@@ -10,7 +10,9 @@ declare(strict_types=1);
 final class Controller
 {
 
-    // Load model
+    /**      
+     * Load model       
+     */  
     public function model($model)
     {
         // Require model file
